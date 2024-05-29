@@ -1,10 +1,7 @@
 SELECT * FROM users
-INNER JOIN dni;
-
-SELECT * FROM users
-INNER JOIN dni
+LEFT JOIN dni
 ON users.user_id = dni.user_id;
 
-SELECT * FROM users
-JOIN dni
+SELECT name, dni_number FROM users
+LEFT JOIN dni
 ON users.user_id = dni.user_id;
