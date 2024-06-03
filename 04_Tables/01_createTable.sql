@@ -79,3 +79,9 @@ FOREIGN KEY(user_id) REFERENCES users(user_id),
 FOREIGN KEY(language_id) REFERENCES languages(language_id),
 UNIQUE(user_id, language_id)
 );
+
+CREATE TABLE mail_history(
+mail_history_id int AUTO_INCREMENT NOT NULL PRIMARY KEY,
+user_id int NOT NULL,
+mail varchar(100) NULL
+);

@@ -9,3 +9,6 @@ CREATE UNIQUE INDEX idx_name ON users(name, surname);
 
 --Consulta
 SELECT * FROM users WHERE name = 'Samuel';
+
+--Borrar indice
+DROP INDEX idx_name ON users;
